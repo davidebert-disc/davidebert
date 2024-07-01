@@ -13,7 +13,28 @@ header {
     background-color: #841617; /* Crimson red OU color */
     color: #ffffff;
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
 }
 
 .container {
@@ -25,10 +46,11 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -47,7 +69,6 @@ nav ul li a:hover, nav ul li a.active {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
-
 
 .intro-text {
     width: 60%;
@@ -92,7 +113,6 @@ footer {
     margin-top: auto; /* Pushes the footer to the bottom */
 }
 
-/* Contact form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -160,7 +180,6 @@ button:hover {
     background-color: darkred;
 }
 
-
 .profile-card {
     flex: 0 0 30%;
     background: white;
@@ -177,7 +196,6 @@ button:hover {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
-
 
 .profile-details h2 {
     margin: 0.5rem 0;
@@ -213,20 +231,18 @@ button:hover {
 
 .image-column {
     flex: 1;
-    max-width: 800px; /* Ensures the image column does not exceed 800px */
+    max-width: 800px;
     margin-left: 15px;
 }
 
 .image-column img {
     width: 100%;
-    height: auto; /* Maintains the aspect ratio of the image */
+    height: auto;
 }
 
 .image-column figcaption {
     text-align: center;
 }
-
-/* Add to your existing styles.css */
 
 .publications-list {
     list-style-type: none;
@@ -236,16 +252,15 @@ button:hover {
 
 .publications-list li {
     margin-bottom: 15px;
-    padding-left: 20px; /* Indentation for better readability */
-    text-indent: -20px; /* Negative text indent to align bullets with text */
+    padding-left: 20px;
+    text-indent: -20px;
 }
 
 .publications-list li::before {
-    content: "• "; /* Custom bullet point */
-    color: #841617; /* Crimson red OU color */
+    content: "• ";
+    color: #841617;
 }
 
-/* Social icons styles */
 .social-icons {
     margin-top: 10px;
 }
@@ -261,7 +276,6 @@ button:hover {
     color: #dddddd;
 }
 
-/* Social icons styles */
 .social-icons-card {
     margin-top: 10px;
 }
@@ -275,4 +289,9 @@ button:hover {
 
 .social-icons-card a:hover {
     color: crimson;
+}
+
+.ou-logo {
+    width: 80px;
+    height: auto;
 }
