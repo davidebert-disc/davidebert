@@ -48,16 +48,6 @@ nav ul li a:hover, nav ul li a.active {
     border-bottom: 1px solid #ddd;
 }
 
-/* .profile-image {
-    width: 30%;
-    aspect-ratio: 1 / 1; 
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}  */
 
 .intro-text {
     width: 60%;
@@ -201,12 +191,88 @@ button:hover {
 .bio-button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: crimson;
+    background-color: darkred;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .bio-button:hover {
-    background-color: darkred;
+    background-color: crimson;
+}
+
+.project .content {
+    display: flex;
+    align-items: center;
+}
+
+.text-column {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.image-column {
+    flex: 1;
+    max-width: 800px; /* Ensures the image column does not exceed 800px */
+    margin-left: 15px;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.image-column figcaption {
+    text-align: center;
+}
+
+/* Add to your existing styles.css */
+
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publications-list li {
+    margin-bottom: 15px;
+    padding-left: 20px; /* Indentation for better readability */
+    text-indent: -20px; /* Negative text indent to align bullets with text */
+}
+
+.publications-list li::before {
+    content: "• "; /* Custom bullet point */
+    color: #841617; /* Crimson red OU color */
+}
+
+/* Social icons styles */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #dddddd;
+}
+
+/* Social icons styles */
+.social-icons-card {
+    margin-top: 10px;
+}
+
+.social-icons-card a {
+    color: darkred;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons-card a:hover {
+    color: crimson;
 }
