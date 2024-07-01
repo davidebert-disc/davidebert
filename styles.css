@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #841617; /* Crimson red OU color */
+    background-color: #841617;
     color: #ffffff;
     padding: 20px 0;
     display: flex;
@@ -25,6 +25,11 @@ header {
 
 .logo {
     margin-right: 20px;
+}
+
+.ou-logo {
+    width: 80px; 
+    height: auto;
 }
 
 .header-right {
@@ -148,7 +153,10 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+    width: 25%; /* Set button width to 1/4th of the input box size */
+    align-self: center; /* Center the button horizontally */
 }
+
 
 button:hover {
     background-color: #7A1B14;
@@ -179,7 +187,6 @@ button:hover {
 .bio-button:hover {
     background-color: darkred;
 }
-
 .profile-card {
     flex: 0 0 30%;
     background: white;
@@ -192,7 +199,7 @@ button:hover {
 }
 
 .profile-image {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
@@ -217,6 +224,21 @@ button:hover {
 
 .bio-button:hover {
     background-color: crimson;
+}
+
+.social-icons-card {
+    margin-top: 10px;
+}
+
+.social-icons-card a {
+    color: darkred;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons-card a:hover {
+    color: crimson;
 }
 
 .project .content {
@@ -244,56 +266,31 @@ button:hover {
     text-align: center;
 }
 
-.publications-list {
+.info-section {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.education-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.publications-list li {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    text-indent: -20px;
+.education-list li {
+    margin-bottom: 10px;
 }
 
-.publications-list li::before {
-    content: "• ";
-    color: #841617;
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    color: #ffffff;
-    margin: 0 10px;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #dddddd;
-}
-
-.social-icons-card {
-    margin-top: 10px;
-}
-
-.social-icons-card a {
-    color: darkred;
-    margin: 0 10px;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.social-icons-card a:hover {
-    color: crimson;
-}
-
-.ou-logo {
-    width: 80px;
-    height: auto;
+.education-list li i {
+    margin-right: 10px;
 }
 
 .contact-section {
@@ -306,14 +303,14 @@ button:hover {
 
 .contact-left {
     flex: 1;
-    max-width: 45%; /* Ensure the section doesn't exceed 45% of the container width */
+    max-width: 60%; /* Ensure the section doesn't exceed 45% of the container width */
     padding: 10px;
     box-sizing: border-box;
 }
 
 .contact-right {
     flex: 1;
-    max-width: 45%; /* Ensure the section doesn't exceed 45% of the container width */
+    max-width: 30%; /* Ensure the section doesn't exceed 45% of the container width */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -331,19 +328,157 @@ button:hover {
     overflow: hidden;
 }
 
-
 footer {
-    background-color: #841617; /* Crimson red OU color */
+    background-color: #841617; 
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    margin-top: auto; 
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #dddddd;
 }
 
 form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    margin-bottom: 40px; /* Add space after the form */
+    margin-bottom: 40px; 
+}
+
+/* Word cloud image on homepage */
+.word-map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff; /* White background to match the theme */
+}
+
+.word-map-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #841617; /* Crimson red border to match the theme */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff; /* White background for the image */
+}
+
+/* Experiences and awards home page */
+
+.experience-awards {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience-awards h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #841617; /* Crimson red OU color */
+}
+
+.experience-awards-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.word-map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff; /* White background to match the theme */
+}
+
+.word-map-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #841617; /* Crimson red border to match the theme */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff; /* White background for the image */
+}
+
+/* Carousel styles */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: auto; /* Change the width to auto */
+    height: 50px; /* Ensure the height is appropriate for the button */
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
