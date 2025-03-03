@@ -371,8 +371,16 @@ button:hover {
     border: none;
 }
 
+.facebook-embed {
+    display: flex;               /* Allows using justify-content */
+    justify-content: center;     /* Centers child horizontally */
+    width: 100%;                 /* Parent container is full width */
+  }
+  
+
 .facebook-embed iframe {
-    width: 100%;
+    display: block;              /* So margins apply properly if you use them */
+    max-width: 500px;            /* The largest width you want */               
     height: 500px;
     border: none;
     overflow: hidden;
